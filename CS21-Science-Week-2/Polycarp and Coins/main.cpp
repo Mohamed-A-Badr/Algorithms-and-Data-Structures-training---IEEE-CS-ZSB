@@ -10,12 +10,14 @@ typedef unsigned long long int ll;
 #define MAX 1e5
 
 void solve(){
-    ll n;
+    long double n;
     cin >> n;
-    ll l, r;
-    r = n / 3;
-    l = n - r * 2;
-    cout << l << " " << r << el;
+    if(n == 1)
+        cout << 1 << " " << 0 << el;
+    else {
+        ll r = round(n / 3);
+        cout << int(n) - (r * 2) << " " << r << el;
+    }
 }
 
 int main()
